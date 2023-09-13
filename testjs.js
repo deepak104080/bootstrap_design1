@@ -50,11 +50,7 @@ function clickFunction() {
 
 
 //ES6 - day
-
-
 //async js
-
-
 //api call - promise
 
 
