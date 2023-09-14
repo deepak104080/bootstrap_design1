@@ -64,3 +64,46 @@ let newCars = cars.map((item) => {
 })
 
 console.log(newCars);
+
+
+
+////////////////////////////////
+// api call
+
+// setTimeout(fn, 2000) - fn is a callback function
+
+// Traditional JS
+// XMLHttpRequest - Callback
+// ajax (jQuery) - Callback
+
+
+// ES6
+// fetch - Promise/async await
+// axios - Promise/async await
+
+
+// API - Application Programming Interface
+
+// CRUD - REST API
+// Create - POST
+// Read - GET
+// Update - PUT
+// Delete - DELETE
+
+// function apiCallFetchPromise() {
+//     fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+//     .then(res => res.json())
+//     .then(data => console.log('API Call - ', data));
+// }
+
+// apiCallFetchPromise()
+
+
+const apiCallFetchAsyncAwait = async () => {
+    let res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    let data = await res.json();
+    console.log('API Data from async await - ', data);
+}
+
+apiCallFetchAsyncAwait()
+
